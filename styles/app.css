@@ -164,10 +164,27 @@ body{
     .menu__link{
         color: #fff;
     }
+    .main{
+        margin-top: 1.2rem;
+    }
+    .page-content{
+        width: 100%;
+        order: 1;
+    }
+    .page-banner{
+        width: 100%;
+        order: 0;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .page-banner__image{
+        max-width: 370px;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .container{
         max-width: 100%;
+        padding: 0 2rem;
     }
 }
