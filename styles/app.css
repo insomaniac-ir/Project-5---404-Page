@@ -63,6 +63,15 @@ body{
     padding: 1rem 1.3rem;
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.nav__icon{
+    font-size: 2rem;
+}
+
 .main{
     margin-top: 2.3rem;
 }
@@ -114,4 +123,51 @@ body{
 }
 .page-banner__image{
     width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        top:0;
+        left:0px;
+        flex-direction: column;
+        bottom: 0;
+        background: #160B38;
+        width: 16rem;
+        transition: 0.3s all;
+        margin-top: 0;
+        z-index: 99999;
+        padding: 2rem 1rem;
+    }
+    .menu__item{
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+    .menu__link{
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
 }
