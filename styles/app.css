@@ -154,6 +154,7 @@ body{
         width: 16rem;
         transition: 0.3s all;
         margin-top: 0;
+        margin-bottom: 0 ;
         z-index: 99999;
         padding: 2rem 1rem;
     }
@@ -186,5 +187,11 @@ body{
     .container{
         max-width: 100%;
         padding: 0 2rem;
+    }
+    .page-content__title{
+        font-size: 3rem;
+    }
+    .page-content__caption{
+        font-size: 1.2rem;
     }
 }
