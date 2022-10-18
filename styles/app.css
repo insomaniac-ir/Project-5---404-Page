@@ -16,6 +16,11 @@ body{
     margin-right: auto;
     padding: 0 1rem;
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 .header{
 
@@ -56,4 +61,57 @@ body{
     font-family: "Jost-Bold";
     border-radius: 0.9rem 0.9rem 0 0.9rem;
     padding: 1rem 1.3rem;
+}
+
+.main{
+    margin-top: 2.3rem;
+}
+.page{
+
+}
+
+.page-content{
+    width: 50%;
+}
+.page-content__title{
+    color: #160B38;
+    font-size:4.4rem;
+    position: relative;
+}
+
+.page-content__title::before{
+    content: "";
+    position: absolute;
+    background: url("../images/Lines.svg") no-repeat;
+    left: -25px;
+    top: -12px;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    
+}
+.page-content__caption{
+    color: #160B38;
+    font-family: "Jost-Medium";
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-top: 1rem;
+    margin-bottom:1.7rem;
+}
+.page-content__link{
+    background-color: #8054F6;
+    color: #fff;
+    font-family: "Jost-Bold";
+    border-radius: 0.9rem 0.9rem 0 0.9rem;
+    padding: 1rem 1.3rem;
+    text-decoration: none;
+    display: block;
+    max-width: 146px;
+    text-align: center;
+}
+.page-banner{
+    width: 50%;
+}
+.page-banner__image{
+    width: 100%;
 }
